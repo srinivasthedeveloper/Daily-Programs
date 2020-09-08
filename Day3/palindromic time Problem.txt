@@ -1,0 +1,32 @@
+Palindromic Time
+
+The program must accept a time T in 24-hour format (HH:MM) as the input. The program must print the next palindromic time of T in 24-hour format (HH:MM) as shown in the Example Input/Output section.
+
+Boundary Condition(s):
+0 <= HH <= 23
+0 <= MM <= 59
+
+Inpur Format:
+The first line contains the time T in 24-hour format (HH:MM).
+
+Output Format:
+The first line contains the next palindromic time of T in 24-hour format (HH:MM).
+
+Example Input/Output 1:
+Input:
+12:10
+
+Output:
+12:21
+
+Explanation:
+Here the time T = 12:10, so the next palindromic time is 12:21.
+The reverse of 12:21 is equal to the same time itself.
+So 12:21 is printed as the output.
+
+Example Input/Output 2:
+Input:
+05:55
+
+Output:
+10:01
