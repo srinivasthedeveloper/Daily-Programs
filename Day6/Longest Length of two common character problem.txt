@@ -1,0 +1,15 @@
+Find the longest length between two common characters in a given string
+
+INPUT:-
+
+abracadabra
+
+OUTPUT:-
+
+10
+
+EXPLANATION:-
+
+first char 'a' and last char 'a' are the two common characters with longest length between them
+
+0th index - 10th index = 10
