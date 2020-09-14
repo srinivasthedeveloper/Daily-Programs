@@ -1,0 +1,29 @@
+The program must accept a string S containing multiple words seperated by comma ',' the program must print the words in the string S that are formed using alphabets form the single row of american keyboard. if there is no such word in the string S the program must print -1 as output
+
+AMERICAN KEYBOARD:-
+	Q W E R T Y U I O P
+	 A S D F G H J K L
+	  Z X C V B N M . 
+
+INPUT:-
+HELLO,dad,PeAce
+
+OUTPUT:-
+dad
+
+EXPLANATION:-
+in HELLO H,L in 2nd row E,O in first row not in same row
+in dad   a,d both are in same row
+in PeAce e,P in 1st and a in 2nd c in 3rd row all different
+
+INPUT:-
+root,had,bad,dad,cat,water
+
+OPTPUT:-
+root had dad
+
+INPUT:-
+HAPPY world
+
+OUTPUT:-
+-1
