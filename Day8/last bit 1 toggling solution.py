@@ -1,0 +1,1 @@
+print(eval("0b"+(str(bin(int(input())))[2:][::-1].replace('1','0',1))[::-1]))

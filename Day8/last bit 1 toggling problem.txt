@@ -1,0 +1,9 @@
+the program must accept integer n as input.the program must toggle the last occurring 1 in the binary representation of n. and print the value of n.
+i/p:
+10
+o/p:
+8
+explanation 
+the bin of 10 is 1010
+the last occurring 1010 is toggled to 0.
+then binary of 1000 is 8
