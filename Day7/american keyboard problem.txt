@@ -1,9 +1,26 @@
 The program must accept a string S containing multiple words seperated by comma ',' the program must print the words in the string S that are formed using alphabets form the single row of american keyboard. if there is no such word in the string S the program must print -1 as output
 
 AMERICAN KEYBOARD:-
+ ` 1 2 3 4 5 6 7 8 9 0 - =
 	Q W E R T Y U I O P
 	 A S D F G H J K L
 	  Z X C V B N M . 
+
+Keyboard layout to assume:
+Row 0: `1234567890-=
+Row 1: qwertyuiop[]\
+Row 2: asdfghjkl;'
+Row 3: zxcvbnm,./
+
+Input
+Line 1: word to check
+
+Output
+A single line Yes or No
+Constraints
+0 < Length of word ≤ 128
+
+Examples:-
 
 INPUT:-
 HELLO,dad,PeAce
@@ -23,7 +40,7 @@ OPTPUT:-
 root had dad
 
 INPUT:-
-HAPPY world
+HAPPY,world
 
 OUTPUT:-
 -1
