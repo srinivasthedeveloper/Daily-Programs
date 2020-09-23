@@ -1,0 +1,22 @@
+the program must accept two strings as input to the program. the program must print the uncommon characters of the two string in the two strings in the sorted order. the strings contains only samecase characters and can contain duplicates.
+
+INPUT:-
+characters
+alphabets
+
+OUTPUT:-
+b c l p r
+
+INPUT:-
+srinivasthedeveloper
+thedeveloper
+
+OUTPUT:-
+a i n s
+
+INPUT:-
+geeksforgeeks
+geeksquiz
+
+OUTPUT:-
+f i o q r u z
