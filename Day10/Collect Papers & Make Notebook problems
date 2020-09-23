@@ -1,0 +1,42 @@
+Collect Papers & Make Notebook
+
+There are two rows of boxes (N boxes in each row), where each box contains a certain number of papers. A boy wants to make a notebook using the papers from these 2*N boxes based on the following conditions.
+- He always picks the first box in the first row.
+- If both the boxes contain an odd number of papers or an even number of papers at the same position in the two rows, then he can move down or up and collects the papers from the box. Else he moves towards right side and collects the paper from the box.
+The number of papers in each box is passed as the input to the program. The program must print the number of papers in the boxes he picked to make the notebook as the output.
+
+Boundary Condition(s):
+3 <= N <= 1000
+1 <= Number of papers in each box <= 100
+
+Input Format:
+The first line contains N.
+The second line contains N integers separated by a space.
+The third line contains N integers separated by a space.
+
+Output Format:
+The first line contains the number of papers in the boxes he picked to make the notebook.
+
+Example Input/Output 1:
+5
+40 32 61 87 44
+30 93 51 74 28
+
+Output:
+40 30 93 51 61 87 44 28
+
+Explanation:
+The number of papers in the boxes he picked to make the notebook are highlighted below.
+40 32 61 87 44
+30 93 51 74 28
+Hence the output is
+40 30 93 51 61 87 44 28
+
+Example Input/Output 2:
+Input:
+7
+6 7 8 9 1 2 8
+3 4 5 6 7 8 9
+
+Output:
+6 7 8 9 1 7 8 2 8
