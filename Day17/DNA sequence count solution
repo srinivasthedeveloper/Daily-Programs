@@ -1,0 +1,5 @@
+a=input("Enter Sequence:- ")
+print(*[a.count(i) for i in "ACGT"])
+
+VERSION 2.0
+print(*map(input("Enter Sequence:- ").count,"ACGT"))
