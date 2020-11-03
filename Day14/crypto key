@@ -1,0 +1,94 @@
+You are working in a Government Security Department. Your task is to analyze all packets sent over a network. All information are encrypted using the Vigenere's encryption formula and a cipher is sent. You are given a key and have to decrypt the message. You have to find the decrypted message.
+
+https://en.wikipedia.org/wiki/Vigen%C3%A8re_cipher
+
+Each character is decoded independently of other characters
+The white spaces are ignored.
+
+N.B: The key has to be repeated to match the length of the string or message. If the key is longer than the message, only the part of the key matching the size of the message will be used.
+
+Exemple 1:
+Input: Message = tjtnm row
+key = act
+Output: thank you
+
+cleartext = thank you
+encrypted text: tjtnm row
+key = act , with a=0 and c = 2, t=19
+the message t =19, j=9, t=19, n=13, m=12, r=17, o=14, w=22
+then the decryption will be:
+t-a = 19-0=19
+j-c=9-2=7
+t-t=19-19=0
+n-a=13-0=13
+m-c=12-2=10
+r-t=17-19=-2 here we have to do -2mod26 = 24
+o-a=14-0=14
+w-c=22-2=20
+
+The clear text is the alphabets corresponding to the numbers, which will be:
+19 = t, 7=h, 0=a, 13=n, 10=k, 24=y, 14=o, 20=u
+which gives: thank you
+Input
+Line 1: A string or message to be decrypted.
+Line 2: A word to be used as the key.
+Output
+Output the unencrypted string or message
+Constraints
+* The white spaces are ignored.
+*The whole string or message is lowercase only
+
+Example2
+Input
+
+open
+a
+
+Output
+
+open
+
+
+
+string:-  dm dui tvqqj xb rqoo xul xuhwvkmqw
+Key:-  hidden
+Expected:- we are going to kill the president
+
+string:-  ecgmpujeos lw vvh fggw
+Key:-  code
+Expected:codinggame is the best
+
+string:-  evg zvhdwforw tg iymqr hq dvdgsn kx hwsxor
+Key:-  locked
+Expected:the president is going to travel at eleven
+
+'''
+
+I KNOW IT'S A CRAZY THING BUT HERE IS THE ALPHABETS TABLE FOR YOUR REFERENCE
+characters   =>   index
+    a        =>     0
+    b        =>     1
+    c        =>     2
+    d        =>     3
+    e        =>     4
+    f        =>     5
+    g        =>     6
+    h        =>     7
+    i        =>     8
+    j        =>     9
+    k        =>     10
+    l        =>     11
+    m        =>     12
+    n        =>     13
+    o        =>     14
+    p        =>     15
+    q        =>     16
+    r        =>     17
+    s        =>     18
+    t        =>     19
+    u        =>     20
+    v        =>     21
+    w        =>     22
+    x        =>     23
+    y        =>     24
+    z        =>     25

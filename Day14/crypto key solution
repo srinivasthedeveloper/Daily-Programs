@@ -1,0 +1,27 @@
+s=list(map(ord,list(input())))
+l=list(map(ord,list(input())))
+c="abcdefghijklmnopqrstuvwxyz"
+ca=c.upper()
+t=0
+for i in s:
+    if chr(i).islower():
+        print(c[((i-l[t]))%26],end="")
+        t=0 if(t==len(l)-1)else t+1
+    elif chr(i).isupper():
+        print(ca[((i-l[t]))%26],end="")
+        t=0 if(t==len(l)-1)else t+1
+    else:
+        print(chr(i),end="")
+
+
+#optimized version 2.0
+
+I=input()
+t=I()
+l=len(t)
+K=I()
+m=0
+k=''
+for i in range(l):k+=K[(i-m)%len(K)];m+=(t[i]==' ')
+f=lambda c:ord(c)-97
+I(''.join(chr((f(i)-f(j))%26+97)if i.isalpha()else i for i,j in zip(t,k)))
