@@ -1,0 +1,11 @@
+l=list(map(int,input().split()))
+for i in range(1,len(l)+2): #or for i in range(1,2**32): for O(1)
+	if(i not in l):
+		print(i)
+		break
+
+
+l=list(map(int,input().split()))
+i=1
+while True if(i in l)else False:i+=1
+print(i)
