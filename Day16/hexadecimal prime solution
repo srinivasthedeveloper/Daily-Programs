@@ -1,0 +1,11 @@
+n = input()
+n=int(n,32)
+primelist = lambda n : [x for x in range(2, n) if not 0 in map(lambda z : x % z, range(2,x))]
+# print(0) if(n not in primelist) else ('hi')
+print(", ".join(map(str, primelist(100))))
+
+VERSION 2.O
+
+s=input()
+b=str(bin(int(s,16)))[2:].count("1")
+print(1 if [i for i in range(1,b)if b%i==0]==[1] else 0)

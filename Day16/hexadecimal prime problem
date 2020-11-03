@@ -1,0 +1,56 @@
+You are going to get as input a 32 bits long hexadecimal number and you have to check if the number of set bits is prime or not.
+
+Example
+
+|========================================|
+|Hexa    |Binary    |Number of 1|is prime|
+|========|===============================|
+|00000003|11        |2          |true    |	
+|0000000F|1111      |4          |false   |
+|0000000C|1100      |2          |true    |
+|========================================|
+
+Input
+S hexadecimal string
+Output
+A single line containing 1 if the number of sets bits is prime 0 otherwise
+Constraints
+S hexadecimal of 32 bits, 4 for each character so it has lenght 8
+
+0 or 1 are not considered as primes
+Example
+TESTCASE 1
+Input
+
+00000000
+
+Output
+
+0
+
+TESTCASE 2
+Input
+
+00000003
+
+Output
+
+1
+
+TESTCASE 3
+Input
+
+0000000F
+
+Output
+
+0
+
+TESTCASE 4
+Input
+
+0000000C
+
+Output
+
+1
