@@ -1,0 +1,36 @@
+'''
+lets take X as two legger and Y as four legger.
+
+each has only one head therefore,
+
+X + Y = 100   ----->(1)
+
+X has two legs and Y has four legs therefore,
+
+2X + 4Y = 300 ----->(2)
+
+solution:-
+
+X + Y = 100
+=> Y = 100 - X   ----(3)
+
+2X + 4Y = 300
+=> 2X = 300 - 4Y
+from(3)=> {2X = 300 - 4(100 - X)}  --->important
+=> 2X = 300 - 400 + 4X
+=> -2X = -100
+=> {-X= -(100/2)}               --->important
+=> [X= 50]
+
+(3)=> Y = 100 - X
+=> Y = 100 - 50
+=> [Y = 50]
+
+'''
+
+totalHeadCount,totalLegsCount=map(int,input("Enter TotalHeadCount TotalLegsCount\n").split())
+twoLegger,fourLegger=0,0
+twoLegger=totalLegsCount-(4*totalHeadCount)
+twoLegger=abs(twoLegger//2)
+fourLegger=totalHeadCount-twoLegger
+print("%d veggies\n%d Meatlovers"%(fourLegger,twoLegger))

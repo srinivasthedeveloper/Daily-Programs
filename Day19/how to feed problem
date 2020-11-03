@@ -1,0 +1,12 @@
+Given Problem
+To find the number of different dinosaurus in jurassic park (differentiate with their legs)
+types:
+1) Two Legger (vegetarian)
+2) Four Legger (Non-Vegetarian)
+we have totalHeadCount and totalLegsCount
+
+I/P format totalHeadCount totalLegsCount
+100 300
+
+50 veggies
+50 Meatlovers
