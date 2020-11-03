@@ -1,0 +1,18 @@
+In this problem you have to find the number of primeNumbers present inside the range starting(inculusive) and end(inclusive)
+
+input format:
+start
+end
+
+output format:
+no of prime numbers
+
+Input:
+1
+10
+
+Output:
+4
+
+Explanation:
+in range of 1 to 10 the possible primeNumbers are 2,3,5,7. Therefore the no of primeNumbers is 4

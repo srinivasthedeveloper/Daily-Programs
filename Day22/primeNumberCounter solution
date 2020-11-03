@@ -1,0 +1,28 @@
+'''
+#for Understanding Brief version
+
+def primeNumberCounter(start,stop):
+	primecount=0
+	temp=start
+	start=2 if(start<2) else start
+	stop+=1
+	for i in range(start,stop):
+		isPrimeNumber=1
+		for j in range(2,i):
+			if(i%j==0):
+				isPrimeNumber=0
+		if(isPrimeNumber):
+			primecount+=1
+	print(primecount)
+
+start=int(input("Enter starting range"))
+stop=int(input("Enter ending range"))
+primeNumberCounter(start,stop)
+'''
+#  miniature version
+
+primeNumberCounter= lambda start,stop:[i for i in range(start,stop+1) if not 0 in map(lambda j: i%j,range(2,i))]
+start=int(input("Enter starting range:- "))
+stop=int(input("Enter ending range:- "))
+start=2 if(start<2) else start
+print(len(primeNumberCounter(start,stop)))
