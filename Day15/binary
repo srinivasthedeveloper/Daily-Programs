@@ -1,0 +1,65 @@
+The game mode is REVERSE: You do not have access to the statement. You have to guess what to do by observing the following set of tests:
+
+Test 1
+Input
+6
+
+0
+1
+2
+3
+9
+256
+
+output
+0
+1
+10
+11
+1001
+100000000
+
+Test 2
+Input
+1
+
+2
+
+output
+10
+
+
+Test 3
+Input
+1
+
+29
+
+output
+11101
+
+
+Test 4
+Input
+9
+
+79
+46
+13
+71
+82
+93
+48
+26
+50
+
+output
+1001111
+101110
+1101
+1000111
+1010010
+1011101
+110000
+11010
+110010
