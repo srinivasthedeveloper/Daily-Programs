@@ -1,0 +1,12 @@
+n=int(input())
+a=list(map(int,input().split()))
+l=[abs(i) for i in a if i<0]
+l.append(9999999)
+u=[i for i in a if i>0]
+u.append(9999999)
+if (0 in a)or(len(l)+len(u)==2):
+    print(0)
+elif(min(l)<min(u)):
+    print("-"+str(min(l)))
+else:
+    print(min(u))
