@@ -1,0 +1,18 @@
+def teamProject():
+	N=int(input())
+	l=list(map(int,input().split()))
+	n=len([i for i in l if(i<0)])
+	p=len([i for i in l if(i>=0)])
+	g=([3]*(n//3))+([0]*len(l))
+	n=n%3
+	i=0
+	while(n+p>0):
+		if(g[i]<3 and n>0):
+			g[i]+=1
+			n-=1
+		elif(g[i]<5 and p>0):
+			g[i]+=1
+			p-=1
+		if(g[i]==5 or (p==0 and g[i]>=3)):
+			i+=1
+	print(len([i for i in g if(i>0)]))

@@ -1,0 +1,42 @@
+Project Teams
+
+N employees are working in a company. Each employee has a rating (positive/negative). A positive rating means the employee is performing good and a negative rating means the employee is performing poor. The company has decided to form teams based on the following conditions.
+- Each team contains at most 5 employees.
+- Each team can have a maximum of 3 employees with negative rating.
+The program must accept N integers representing the ratings of the N employees as the input. The program must print the minimum number of teams T (that can be formed based on the above conditions) as the output.
+Note: All ratings are non-zero.
+
+Boundary Condition(s):
+1 <= N <= 1000
+-10 <= Each integer value <= 10
+
+Input Format:
+The first line contains N.
+The second line contains N integers separated by a space.
+
+Output Format:
+The first line contains T.
+
+Example Input/Output 1:
+Input:   
+6
+5 -1 -6 -2 -6 7
+
+Output:
+2
+
+Explanation:
+There are 2 employees with positive ratings and 4 employees with negative ratings. One of the possible ways is given below.
+The first team can be formed with 5 employees (5 -1 -2 -6 7).
+The second team can be formed with 1 employee (-6).
+Hence the output is 2.
+
+Example Input/Output 2:
+Input:
+9
+2 -5 -7 -2 -10 -3 -4 -6 -3
+
+Output:
+3
+
+
