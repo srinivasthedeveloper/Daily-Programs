@@ -1,0 +1,13 @@
+js code
+
+r=readline
+m=r()
+d=new Date(r(),m,1)
+print(new Date(d-1).getDate())
+
+python code
+from calendar import monthrange as f
+I=input
+m=int(I())
+y=int(I())
+I(f(y,m)[1])

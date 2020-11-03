@@ -1,0 +1,33 @@
+In this program you will get the value M(month) and Y(year) as input.
+You have to print the no of days D as output
+
+input format
+1st line contains the month M
+2nd line contains the year Y
+
+output 
+print the no of days in that month 
+
+i/p
+2
+1800
+o/p
+28
+
+i/p
+3
+2000
+o/p
+31
+
+i/p
+8
+2020
+o/p
+31
+
+i/p
+2
+1796
+o/p
+29
