@@ -1,0 +1,6 @@
+c='DrMrMrsMsLordLadySirBALLBMDPhDJrSnrJr,Snr,theDeveloper'
+I=input
+for i in range(int(I())):
+	t=I().split();s=""
+	for i in t:s+=i[0]+'.'if i not in c else""
+	print(s)

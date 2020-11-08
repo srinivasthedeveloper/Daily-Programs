@@ -1,0 +1,26 @@
+You are given a list of names. You must output the initials of each name, with full stops after each letter, ignoring any titles ('Dr', 'Mr', 'Mrs', 'Ms' , 'Lord', 'Lady' or 'Sir') and any degrees ('BA', 'LLB' , 'MD' or 'PhD) or other suffixes ('Jr' or 'Snr).
+Input
+An integer N for the number of names to initialise.
+
+Next N lines: the Names to be initialised.
+Output
+N lines with the initials of the input names.
+Constraints
+The titles will only be one of 'Dr', 'Mr', 'Mrs', 'Ms' , 'Lord', 'Lady' or 'Sir', the degrees will only be one of 'BA', 'LLB' , 'MD' or 'PhD' and the only other possible suffixes are 'Jr','Snr','the Developer'
+Example
+Input
+
+5
+Will Smith
+Lord Voltermont
+Drago Malfoy
+Sirious Black
+SriNivaS the Developer
+
+Output
+
+W.S.
+V.
+D.M.
+S.B.
+S.
