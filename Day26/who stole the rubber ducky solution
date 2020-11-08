@@ -1,0 +1,9 @@
+for i in range(n):
+	l=input().split()
+	h,m=map(int,l[0].split(':'))
+	t=h*60+m
+	if(t<8*60 or t>20*60):
+		if(l[-1]=='1'):
+			thief=l[-2]
+		else:
+			thief=""

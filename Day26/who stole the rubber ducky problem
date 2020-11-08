@@ -1,0 +1,48 @@
+You're a security consultant at a prestigious rubber duck museum. When you arrive at work one morning, everyone is in a panic. The most prized exhibit, Alan Turing's personal rubber duck, has been stolen overnight and replaced with a false replica!
+
+After talking to everyone, you find out the following:
+* One of the employees stole the rubber duck.
+* The robbery must have happened between 20:00 (8pm) and 08:00 (8am)
+* The thief forgot to close the case after stealing the duck.
+* The electronic lock on the glass case holding the rubber duck creates a log entry every time the case is opened or closed.
+
+You pull the logs from the case lock to figure out who has stolen the duck.
+
+Write a program that finds and outputs the employee ID of the rubber duck thief!
+Input
+Line 1: n - The amount of log entries
+The next n lines: Log entries on the form:
+TIME EMPLOYEE_ID CASE_OPEN
+
+Where:
+TIME is a 24-hour clock timestamp on the form HH:MM
+EMPLOYEE_ID is a 4-digit integer
+CASE_OPEN is 1 if the case was opened and 0 if the case was closed
+Output
+The employee ID of the rubber duck thief as it appears in the logs.
+Constraints
+1 ≤ n ≤ 10
+
+For every log entry:
+TIME is a 24-hour clock timestamp with the format HH:MM
+EMPLOYEE_ID is a 4-digit integer
+CASE_OPEN is always 1 or 0
+
+CASE_OPEN is always 1 in the first log entry, and alternates between 1 and 0 for each log entry.
+
+Log entries are always given in order, sorted by the timestamp.
+
+The robbery always occurs between 20:00 and 08:00.
+
+An innocent employee may close the case after the thief has stolen the rubber duck.
+Example
+Input
+
+3
+20:47 3474 1
+20:49 3474 0
+01:32 9651 1
+
+Output
+
+9651
