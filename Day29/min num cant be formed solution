@@ -1,0 +1,47 @@
+>>> t=lambda x:t([[x[0][0]+x[1][0]],x[1][1:]])if(x[1] and x[1][0]<=x[0][0])else x[0][0];(t([[min([1,int(input("Enter number:- "))])],sorted(list(map(int,input("Enter List:- ").split())))]))
+Enter number:- 6
+Enter List:- 1 2 4 9 5 1
+23
+>>> 
+
+
+#wait a minute wkcutheftha is that how its work???
+	#workFlow
+def findMinNum(List):    #this list contains two list inside 1st for smallest value and 2nd for list elements
+	if(List[1] and List[1][0]<=List[0][0]): 	#checking for (null) value and the (value smaller than smallestNumber)
+		return findMinNum([[List[0][0]+List[1][0]],List[1][1:]])  #updating the smallestValue by adding 0th element of the list and returning value of [[smallestValue] and[elements of the list from 1st postion]]
+	else:
+		return List[0][0] #if smallest element found return smallest element (might be missed smallest value or sum(List)+1)
+
+print(findMinNum([[min([1,int(input("Enter number:- "))])],sorted(list(map(int,input("Enter List:- ").split())))]))
+# in the above line there is no use of " min([1,int(input("Enter number:-"))]) " instead we can directly pass [1]
+# its like going for college to get job (i mean it is formated LOL)
+
+
+t=lambda x:t([[x[0][0]+x[1][0]],x[1][1:]])if(x[1] and x[1][0]<=x[0][0])else x[0][0];(t([[1],sorted(list(map(int,input().split())))]))
+
+
+List=list(map(int,input().split()))
+List.sort()
+number=1
+for i in List:
+    if(i<=number):
+        number+=i
+    else:
+        break
+print(number)
+'''
+from itertools import combinations
+
+List=list(map(int,input().split()))
+sumList=[]
+for i in range(1,len(List)+1):
+    for item in combinations(List,i):
+        sumList.append(sum(item))
+sumList=list(set(sumList))
+print(sumList,"\n\n")
+for i in range(min(sumList),max(sumList)+2):
+    if i not in sumList:
+        print(i)
+        break
+'''

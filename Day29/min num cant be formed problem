@@ -1,0 +1,35 @@
+you have given a number of elements in an array and n elements of an array you have to find the minimum number which can't be formed by the elements using addition operation.
+
+
+INPUT:-
+6
+1 2 4 9 5 1
+
+OUTPUT:-
+23
+
+
+EXPLANATION:-
+the numbers can be formed by the elements using addition operation are
+
+1
+2
+3  (1+2)
+4
+5
+6  (2+4)
+7  (2+5)
+8  (1+2+5)
+9  (4+5)
+10 (1+4+5)
+likewise we can form upto 22 the (1+1+2+4+5+9) so the minimum number that cant be formed is 23
+
+
+Input:-
+4
+2 3 4 5
+
+Output:
+1
+
+her 1 is the minimum number that cant be formed using the above array
