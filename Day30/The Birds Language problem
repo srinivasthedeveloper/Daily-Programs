@@ -1,0 +1,15 @@
+The Birds Language has only one rule: after each vowel (a,e,i,o,u,A,E,I,O,U) you should insert the letter p followed by the vowel one more time. For a given string convert it to Birds Language.
+Input
+string A string which contains ASCII characters.
+Output
+string converted to Birds Language.
+Constraints
+1 < length of string < 1000
+Example
+Input
+
+alex
+
+Output
+
+apalepex

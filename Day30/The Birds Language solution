@@ -1,0 +1,1 @@
+print("".join([i+'p'+i if(i in"aeiouAEIOU")else i for i in input()]))
