@@ -1,0 +1,11 @@
+n=int(input())
+l=[]
+for i in range(n):
+    l.append(input())
+o=[i for i in set(l) if(i.split()[0]=="sock" and l.count(i)%2)]
+print(len(o))
+if(len(o)):
+    o=sorted(o,key=lambda o:o.split()[2])
+    o=sorted(o,key=lambda o:o.split()[1])
+    for i in o:
+        print(*i.split()[1:])
