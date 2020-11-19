@@ -1,0 +1,31 @@
+n=int(input())
+funcs=[input("Enter functions:- ") for i in range(n)]
+arr=list(map(int,input("Enter elements:- ").split()))
+s="("+funcs[0]+")"
+for i in range(1,len(funcs)):
+	s=s+"(("+funcs[i]+")"
+s+='('
+p=")"*len(funcs)
+for i in arr:
+	print(eval(s+str(i)+p))
+
+
+'''
+#this is the most presions one in my fav collection
+(lambda x:x+2)(2)  will returns 4 2+2
+
+what about nesting it like
+
+(lambda x:x+2)((lambda x:x-2)(2)) or
+
+(lambda x:x+2)((lambda x:x-2)((lambda x:x*2)((lambda x:x/2)(2))))
+
+did you figured that?
+
+1st step
+()
+
+rest steps
+(() (() (()  two open and one close its in a pattern hence its really easy to solve now
+
+'''

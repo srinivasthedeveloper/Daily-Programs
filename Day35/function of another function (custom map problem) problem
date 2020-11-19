@@ -1,0 +1,35 @@
+In this problem, There are N trainings(funcs) in a gym and a list of people with some power level(arr) are passed as input
+you have to print the final power level of each individuals after that training
+
+Input Format
+1st line gives N(no of trainings)
+next N lines gives N functions
+Last line gives the people power levels sep by space
+
+Output Format
+Power of each individual in seperate line
+
+Input
+2
+lambda x:x+1
+lambda x:x+2
+1 2 3 4
+
+Output
+4
+5
+6
+7
+
+Input
+2
+lambda x:x+x
+lambda x:x*x
+1 2 3 4
+
+Output
+2
+8
+18
+32
+
