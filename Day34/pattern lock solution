@@ -1,0 +1,6 @@
+size = int(input())
+current = list(map(int, list(input())))
+combination = list(map(int, list(input())))
+moves = [abs(current[i] - combination[i]) for i in range(size)]
+minMoves = [min(moves[i], 10-moves[i]) for i in range(size)]
+print("".join(map(str, minMoves)))

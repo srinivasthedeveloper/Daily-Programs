@@ -1,0 +1,21 @@
+You do not like to waste your time when you unlock your combination lock. You have to find the shortest number of moves for each rotating disks to unlock it.
+Your padlock is composed with n rotating disks of 10 values (0 to 9). You can move rotating disks in two directions (up and down).
+Input
+Line 1: Padlock size n
+Line 2: n digits d, corresponding to current padlock value
+Line 3: n digits d, corresponding to padlock password
+Output
+Line 1: Number of moves for each rotating disk
+Constraints
+0 < n ≤ 10
+0 ≤ d ≤ 10
+Example
+Input
+
+3
+000
+912
+
+Output
+
+112
