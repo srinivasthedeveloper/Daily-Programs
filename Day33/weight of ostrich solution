@@ -1,6 +1,0 @@
-g = input()
-w = int(input())
-if(g not in 'MF'):
-    print("UNKNOWN")
-else:
-    print((int(w*1.2) if g=='F' else int(w/1.2)))

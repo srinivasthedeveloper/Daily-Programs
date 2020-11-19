@@ -1,0 +1,40 @@
+You are working in a Government Security Department. Your task is to encrypt all packets sent over a network. All information have to be encrypted using the Vigenere's encryption formula and a ciphertext is what has to be sent. You are given a key and have to encrypt the message.
+
+Useful Link:
+
+https://en.wikipedia.org/wiki/Vigenère_cipher
+
+
+
+N.B: The key has to be repeated to match the length of the string or message. If the key is longer than the message, only the part of the key matching the size of the message will be used.
+
+Example1:
+Input:
+Message = i am codingame
+key = code
+Output: k op gqrlriopi
+
+key = code , with c=2, o=14, d=3 and e=4
+
+Note: i+c=i+2=k
+
+The ciphertext text is made up of the letters corresponding to those sums:
+which gives: k op gqrlriopi
+Input
+Line 1: A string or message to be encrypted.
+Line 2: A word to be used as the key.
+Output
+Output the encrypted string or message(ciphertext)
+Constraints
+Only Encode letters
+The key contains only lowercase letters
+White spaces are ignored, the key character will be assigned to the next following character in the message and numbers and handled like white spaces
+Example
+Input
+
+i am a programmer
+ab
+
+Output
+
+i bm b psohrbmnes
