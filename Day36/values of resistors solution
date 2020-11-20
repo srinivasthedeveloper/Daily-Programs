@@ -1,0 +1,36 @@
+d={"black":"0 1","brown":"1 10","red":"2 100","orange":"3 1000","yellow":"4 10000","green":"5 100000",
+"blue":"6 1000000","violet":"7 10000000","grey":"8 100000000","white":"9 1000000000"}
+n=int(input())
+for _ in range(n):
+    l=input().lower().split()
+    s=""
+    b=0
+    for i in range(len(l)):
+        if(i<2):
+            s+=d[l[i]].split()[0]
+        else:
+            b=d[l[i]].split()[1]
+    print(int(s)*int(b))
+
+
+#RUBY SOLUTION
+hash = {
+    black: 0,
+    brown: 1,
+    red: 2,
+    orange: 3,
+    yellow: 4,
+    green: 5,
+    blue: 6,
+    violet: 7,
+    grey: 8,
+    white: 9
+}
+
+n = gets.to_i
+n.times do
+    str_1, str_2, str_3 = gets.split(" ").map &:to_sym
+
+    n = (hash[str_1].to_s + hash[str_2].to_s).to_i * 10 ** hash[str_3]
+    puts n
+end
