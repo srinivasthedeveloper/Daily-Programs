@@ -1,0 +1,12 @@
+string1=input().strip()
+string2=input().split()
+dic={}
+if(len(string1)==len(string2) and len(set(string1))==len(set(string2))):
+    for i in range(len(string1)):
+        dic[string1[i]]=string2[i]
+    if(len(dic)==len(set(string1))):
+        print("YES")
+    else:
+        print("NO")
+else:
+    print("NO")

@@ -1,0 +1,26 @@
+pattern matching test
+
+I/P
+abcacb
+pen hen pin pen pin hen
+
+O/P
+YES
+
+Explaination:-
+a=pen
+b=hen
+c=pin
+
+abcacb=pen hen pin pen pin hen
+
+I/p
+Xyxy
+cat dog cat dog
+
+O/P
+NO
+
+X=cat
+y=dog
+X != x hence the pattern is broken
