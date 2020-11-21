@@ -1,0 +1,21 @@
+Help the robot boy reach his destination.
+Given the number of tiles N, calculate the minimum number of jumps required for the robot to reach his destination.
+
+Here are the constraints:
+1) The robot can jump up to 4 tiles at any point (say current tile is 2, then the robot can reach 3, 4, 5, 6 tiles in the next jump).
+2) The destination is at Nth tile.
+3) Assume Robot is on 1st tile.
+Input
+Given N, the number of tiles.
+Output
+Print the minimum number of jumps the robot needs to reach his destination.
+Constraints
+1 ≤ N ≤ 10^9
+Example
+Input
+
+5
+
+Output
+
+1
