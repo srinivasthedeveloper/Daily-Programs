@@ -1,0 +1,14 @@
+n=int(input())
+d={}
+for i in range(n):
+	s=input()
+	s=[s[:-8]]+[s[-8:]]
+	t=s[1].split('(')
+	movie="".join(s[0])+"".join(t[0])
+	rating=float(t[1].split('/')[0])
+	if(rating>6):
+		d[movie]=rating
+
+#print(*sorted(d,key=lambda d:d[1]),sep="\n")
+for i in(sorted(d.items(),key=lambda d:d[1],reverse=True)):
+    print(i[0].strip())

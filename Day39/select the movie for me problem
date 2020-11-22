@@ -1,0 +1,24 @@
+We have given you a list of movies to watch but you don't want to waste time watching movies rated below 6/10!
+
+You have to choose which movies you are going to watch and rank them according to their ratings.
+Input
+Line 1 : The number of movies in the list
+N next lines : A string with the title of the movie and his rating
+Output
+List of movies titles rated >= 6/10
+Constraints
+If two movies have the same rating, you need to range them in the same order of the original list.
+Example
+Input
+
+4
+Destination finale 2 (6.2/10)
+The Fighting Temptations (5.6/10)
+Le monde de Nemo (8.1/10)
+SIMPONS (the movie) (9/10)
+
+O/P
+
+SIMPONS (the movie)
+Le monde de Nemo
+Destination finale 2
