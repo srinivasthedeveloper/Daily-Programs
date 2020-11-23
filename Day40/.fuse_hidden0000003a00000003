@@ -1,0 +1,27 @@
+#!/usr/bin/env python
+    
+def alphabet(passedChar, intShift):
+    finalChar = 'zz'
+    charList = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z']
+    if passedChar.isupper():
+        passedChar = passedChar.lower()
+        desiredPosition = charList.index(passedChar) - intShift
+        if desiredPosition < 0:
+            desiredPosition = len(charList) + desiredPosition
+        finalChar = charList[desiredPosition].upper()
+    else:
+        desiredPosition = charList.index(passedChar) - intShift
+        if desiredPosition < 0:
+            desiredPosition = len(charList) + desiredPosition
+        finalChar = charList[desiredPosition]
+    return finalChar
+
+caesarEncrypted = input("enter your encrypted text:- ").strip()
+finalOutput = []
+
+for i in list(range(1,51)):
+    for x in caesarEncrypted:
+        finalOutput.append(alphabet(x, i))
+    else:
+        print("ROT",i,":-  ",''.join(finalOutput))
+        finalOutput = []

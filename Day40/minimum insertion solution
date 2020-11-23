@@ -1,0 +1,13 @@
+def minInsReq():
+	string=input().strip()
+	orginal=string
+	temp=string[::-1]
+	counts=0
+	for i in range(1,len(orginal)):
+		if(string==string[::-1]):
+			break
+		string=orginal
+		string=temp[:i]+string
+		print(string)
+		counts+=1
+	print(counts)

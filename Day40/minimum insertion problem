@@ -1,0 +1,26 @@
+In this problem a string S will be given you can add any character/number to the string to make that string as palindrome for n times. you have to print the minimum number of insertion required.
+
+I/P
+hello
+O/P
+4
+
+Explanation:-
+1 ohello
+2 olhello
+3 ollhello
+4 ollehello
+
+I/P
+may
+O/P
+2
+
+Explanation:-
+1 ymay
+2 yamay
+
+I/P
+malayalam
+O/P
+0
