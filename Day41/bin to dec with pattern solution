@@ -1,0 +1,15 @@
+s=input().split()
+t=""
+for i in s:
+    if(i=='#'):
+        t+='1'
+    else:
+        t+='0'
+print(int(t,2))
+
+
+a=input()
+a=a.replace('###', '0')
+a=a.replace('#', '1')
+a=a.replace(' ', '')
+print(int("".join(list(a)),2))
