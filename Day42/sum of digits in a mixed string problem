@@ -1,0 +1,17 @@
+You are given a string sentence as input, you must find the different numbers contained in this variable and display their sum.
+For instance, if sentence is "h3110 w0r1d !", you can find "3110", "0" and "1" in it. You have to print their sum: "3111"
+Input
+A string sentence.
+Output
+The sum of the numbers found in sentence
+Constraints
+sentence can't be longer than 512 chars.
+sum can be stored in 4 bytes.
+Example
+Input
+
+H3ll0 w0r1d !
+
+Output
+
+4

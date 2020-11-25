@@ -1,0 +1,5 @@
+s=input()
+for i in s:
+ if not(i.isdigit()):
+  s=s.replace(i,' ')
+print(sum([int(i)for i in s.split()]))
