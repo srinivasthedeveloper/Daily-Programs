@@ -1,4 +1,4 @@
-s=input()
+s=input("Enter some string:- ")
 for i in s:
  if not(i.isdigit()):
   s=s.replace(i,' ')
