@@ -2,4 +2,4 @@ s=input("Enter some string:- ")
 for i in s:
  if not(i.isdigit()):
   s=s.replace(i,' ')
-print(sum([int(i)for i in s.split()]))
+print("The sum of the digits in a given string is:-",sum([int(i)for i in s.split()]))
