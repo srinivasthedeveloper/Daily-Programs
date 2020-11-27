@@ -1,0 +1,27 @@
+You are one of the fastest sheriffs in the West. You've taken responsibility for a wagon loaded with gold bullion, now ruthless bands of desperados are vying to shoot you down and lighten the wagon of it's precious load. This is the ultimate chance to prove your skills and be the best - second place is underground!
+
+You will face many opponents, some are slow, other are fast. You have to deal with the fastest ones first! You know their firing speed. Good luck sheriff, stop these desperados!
+Input
+First line: N, the number of desperados.
+Next N lines: Name and firing speed in milliseconds.
+Output
+Names of desperados. Ordered by shooting speed. The fastest is the first.
+If the speed is under zero, do not include this person in the final list. You cannot kill a legend.
+
+NONE if there is nobody.
+Constraints
+0 ≤ N ≤ 10
+All bandits have different fire speed.
+Example
+Input
+
+3
+Joe Dalton 50
+Calamity Jane 30
+Billy The Kid 60
+
+Output
+
+Calamity Jane
+Joe Dalton
+Billy The Kid

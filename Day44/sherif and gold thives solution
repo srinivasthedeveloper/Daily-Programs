@@ -1,0 +1,9 @@
+I=input
+n=int(I())
+l=[]
+f=1
+for i in range(n):
+ t=I().split();l.append([" ".join(t[:-1]),int(t[-1])])
+for i in sorted(l,key=lambda l:l[1]):
+ if(i[1]>0):print(i[0]);f=0
+if f:I("NONE")
