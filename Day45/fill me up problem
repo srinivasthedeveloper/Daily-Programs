@@ -1,0 +1,22 @@
+You have too many buckets here, and most of them are not full.
+Pour everything into the biggest ones and then get rid of the empty ones.
+Input
+Line 1: N The number of buckets
+Next N lines: A line with the size of the bucket and the percentage of how full it is, separated by a whitespace
+Output
+For each non empty bucket, by descending order of contained volume: A line with the size of the bucket and the percentage of how full it is
+Constraints
+2 ≤ N ≤ 100
+Example
+Input
+
+3
+100 90%
+100 20%
+100 30%
+
+Output
+
+100 100%
+100 40%
+100 0%

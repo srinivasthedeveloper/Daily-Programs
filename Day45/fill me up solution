@@ -1,0 +1,13 @@
+h = int(input())
+bck = []
+vol = 0
+for i in range(h):
+    b, p = map(int,input()[:-1].split())
+    bck += [b]
+    vol += p*b//100
+bck.sort()
+while vol:
+    b = bck.pop()
+    v = min(vol, b)
+    vol -= v
+    print(f"{b} {100*v//b}%")
