@@ -1,0 +1,22 @@
+Let N be an integer.
+It is said to be palindromic if it is the same reading backward or forward. For instance, 121 is palindromic in the usual base 10.
+Note that a number could be palindromic in a base b and not in a base b'.
+
+Given an integer N (in the usual decimal system) and a base b, you have to say if N is palindromic in base b.
+Input
+Line 1: An integer N in decimal system.
+Line 2: A base b.
+Output
+Line 1: True if N is palindromic in base b, False otherwise.
+Constraints
+1 ≤ N ≤ 10^20
+1 ≤ b ≤ 100
+Example
+Input
+
+8
+3
+
+Output
+
+True
