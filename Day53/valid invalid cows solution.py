@@ -8,5 +8,4 @@ for i in range(n):
             print("Invalid")
             f=0
             break
-    if(f):
-        print("Valid")
+    if(f):print("Valid")
