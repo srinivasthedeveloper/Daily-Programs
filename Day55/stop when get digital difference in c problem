@@ -23,34 +23,3 @@ Input:
 
 Output:
 23 24 25 26 27 28 29 30 31
-
-
-#include<stdio.h>
-#include <stdlib.h>
-
-int main()
-{
-int n,s,t,p,st;
-scanf("%d",&n);
-t=n;
-s=n%10;
-n/=10;
-while(n){
-    s=abs(s-(n%10));
-    n/=10;
-}
-for(int i=t+1;i<=t*1000;i++){
-    p=i;
-    st=p%10;
-    p/=10;
-    while(p){
-        st=abs(st-(p%10));
-        p/=10;
-    }
-    if(st==s){
-        break;
-    }
-    printf("%d ",st,s,i);
-}
-
-}
