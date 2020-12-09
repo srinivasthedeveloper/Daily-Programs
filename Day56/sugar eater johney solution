@@ -1,0 +1,4 @@
+time = int(input())
+speed = int(input())
+
+print(int(time/60*speed))
