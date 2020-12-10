@@ -1,0 +1,23 @@
+s = input()
+i=0
+for c in s:
+    if c.isalpha():
+        if i&1:
+            print(end=c.lower())
+        else:
+            print(end=c.upper())
+        i+=1
+    else:
+        print(end=c)
+
+
+s=input().strip()
+f=0
+for i in range(len(s)):
+	if(not(s[i].isalpha)):
+		f=bool(not(f))
+		# print(" ",end="")
+	if((i+f)%2==1):
+		print(s[i].lower(),end="")
+	else:
+		print(s[i].upper(),end="")

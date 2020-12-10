@@ -1,0 +1,27 @@
+You need to revive the good old Spongebobmeme!
+
+YoU kNoW wAhT i MeAn!
+
+The first letter should be capitalized, the second lower, the third again capitalized,... and so on.
+Input
+The string: input which need to be converted.
+Output
+A string with the correct converted input.
+Constraints
+input is at least 2 characters long.
+Example
+Input
+
+Squidward
+
+Output
+
+SqUiDwArD
+
+Input
+
+Hello, world
+
+Output
+
+HeLlO, wOrLd
