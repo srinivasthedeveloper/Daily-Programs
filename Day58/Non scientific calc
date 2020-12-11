@@ -1,0 +1,76 @@
+Non scientific calc
+Statement
+ Goal
+You must evaluate given mathematical expression like a non scientific calc, meaning there is no operator precedence. For example, 1+2*3 will result in 9 ((1+2)*3) instead of 7.
+Input
+Input: One string containing an expression to evaluate.
+Output
+Output: Integer result of the expression
+Constraints
+Input string contains only digits 0-9 or operators in +-*/
+0 < Input string length < 30
+-100000 < Output < +100000
+Input string does not contain negative numbers (3*-4 is not a possible input, but 0-4 is possible).
+Divisions always result in integer, no need to round or to use floats. No need to worry about dividing by zero, it won't happen.
+Example
+Input
+
+1+2*3
+
+Output
+
+9
+
+Game modes
+Fastest, Shortest, Reverse
+Test cases
+Simple Test
+Input
+1+2*3
+Output
+9
+Validator 1 Validator
+Input
+6-3*2
+Output
+6
+Simplest Test
+Input
+0
+Output
+0
+Validator 2 Validator
+Input
+1
+Output
+1
+All operations Test
+Input
+10+20*30-40*60/50
+Output
+1032
+Validator 3 Validator
+Input
+9317214/345082-32951*2+4
+Output
+-65844
+Test
+Input
+0-1000/10+50/2
+Output
+-25
+Validator 4 Validator
+Input
+0-1000/10+50/5
+Output
+-10
+Test 5 Test
+Input
+1-1*1+1/1-1
+Output
+0
+Validator 5 Validator
+Input
+2+2*2-2*2-2/2
+Output
+5
