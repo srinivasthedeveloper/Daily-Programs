@@ -1,0 +1,4 @@
+s=input().strip().replace('-',' - ').replace('+',' + ').replace('*',' * ').replace('/',' / ').split()
+while len(s)>1:
+	s=[str(eval("".join(s[:3])))]+s[3:]
+print(int(s[0].split('.')[0]))
