@@ -1,0 +1,7 @@
+n = int(input())
+in_list = [input() for i in range(n)]
+
+for element in in_list[::-1]:
+    for char in element[::-1]:
+        print(ord(char), end='')
+    print('')

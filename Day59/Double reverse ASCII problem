@@ -1,14 +1,17 @@
 Double reverse ASCII
 Statement
- Goal
 Print the ASCII code of the characters of strings in reverse order without separation. Process the strings in reverse order, the last one first.
+
 Input
 Line 1: An integer N for the number of strings to handle.
 Next N lines: A string s (no empty line)
+
 Output
 N lines ASCII codes of input string.
+
 Constraints
 1 ≤ N ≤ 100
+
 Example
 Input
 
@@ -21,9 +24,7 @@ Output
 6766
 65
 
-Game modes
-Fastest, Shortest
-Test cases
+TEST CASES:-
 Test 1 Test
 Input
 2
@@ -32,7 +33,7 @@ BC
 Output
 6766
 65
-Validator 1 Validator
+
 Input
 2
 Z
@@ -40,7 +41,8 @@ KA
 Output
 6575
 90
-Test 2 Test
+
+Test 3 Test
 Input
 2
 Hello
@@ -48,7 +50,7 @@ World!
 Output
 3310010811411187
 11110810810172
-Validator 2 Validator
+
 Input
 2
 foo
@@ -56,19 +58,21 @@ bar*
 Output
 421149798
 111111102
+
 Test 3 Test
 Input
 1
 *+/*-*/%*(#
 Output
 3540423747424542474342
-Validator 3 Validator
+
 Input
 1
 *(&W)%(@#$*
 Output
 4236356440374187384042
-Test 4 Test
+
+Test 5 Test
 Input
 3
 asfasd
@@ -78,7 +82,8 @@ Output
 7475765748567274754343555453
 6366100107106107656557975548575657425657
 1001159710211597
-Validator 4 Validator
+
+
 Input
 3
 *(&(**&(*
@@ -89,11 +94,3 @@ Output
 83746575761001001069710810074657675106107108100653842401001041047475
 424038424240384042
 
-
-n = int(input())
-in_list = [input() for i in range(n)]
-
-for element in in_list[::-1]:
-    for char in element[::-1]:
-        print(ord(char), end='')
-    print('')
