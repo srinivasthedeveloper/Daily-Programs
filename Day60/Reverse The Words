@@ -1,0 +1,72 @@
+Reverse The Words
+Statement
+ Goal
+You need to reverse the "my_d3f1n1t10n_0f_wh4t_4_w0rd_1s" ("my_d3f1n1t10n_0f_wh4t_4_w0rd_1s" consisting of an uninterrupted string of characters from a-z, A-Z, 0-9, including the _ (underscore) character) keeping the punctuation of the text.
+Input
+A single line, with the "my_d3f1n1t10n_0f_wh4t _4_w0rd_1s" to reverse.
+Output
+A single line, with the reversed "my_d3f1n1t10n_0f_wh4t _4_w0rd_1s".
+Constraints
+0 < line length <= 200
+Example
+Input
+
+Hello, How Are You?
+
+Output
+
+olleH, woH erA uoY?
+
+Game modes
+Fastest
+Test cases
+Test 1 Test
+Input
+Hello, How Are You?
+Output
+olleH, woH erA uoY?
+Validator 1 Validator
+Input
+Oh boy, what flavour?
+Output
+hO yob, tahw ruovalf?
+Test 2 Test
+Input
+Haaaaa, I’m a muffin
+Output
+aaaaaH, I’m a niffum
+Validator 2 Validator
+Input
+Dad, I’m hungry
+Output
+daD, I’m yrgnuh
+Test 3 Test
+Input
+Why, w__hy__, w_h_y?
+Output
+yhW, __yh__w, y_h_w?
+Validator 3 Validator
+Input
+He_ll__o, Wo_rl_d, wh__y?
+Output
+o__ll_eH, d_lr_oW, y__hw?
+Test 4 Test
+Input
+Is this you? (Yes) Hello! (Hi!)
+Output
+sI siht uoy? (seY) olleH! (iH!)
+Validator 4 Validator
+Input
+Isx thisx youx? (Yesx) Hellox! (Hix!)
+Output
+xsI xsiht xuoy? (xseY) xolleH! (xiH!)
+Test 5 Test
+Input
+H3110, h0w 4r3 y0u?
+Output
+0113H, w0h 3r4 u0y?
+Validator 5 Validator
+Input
+0113H, w0h 3r4 u0y?
+Output
+H3110, h0w 4r3 y0u?
