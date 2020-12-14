@@ -1,0 +1,5 @@
+s=input().strip()
+value=0
+for i in s:value+=(int(i)*int(not(int(i)%3)))
+for i in range(len(s)-1):value+=(int(s[i:i+2])*int(not(int(s[i:i+2])%3)))
+print(value)
