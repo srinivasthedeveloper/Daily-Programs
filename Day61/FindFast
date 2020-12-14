@@ -1,0 +1,101 @@
+FindFast
+Statement
+ Goal
+For a given positive integer N, find the sum of numbers made of 1 or 2 consecutive digits which are divisible by 3
+
+Example:
+N = 439
+4%3 != 0
+3%3 = 0
+9%3 = 0
+43%3 != 0
+39%3 = 0
+sum = 3+9+39 = 51
+
+Input
+N: a positive Integer
+
+Output
+R: the result is a positive number
+
+Constraints
+N > 0
+Example
+
+Input
+
+
+153
+
+
+Output
+
+18
+
+Game modes
+Shortest
+Test cases
+Test 1 Test
+
+Input
+153
+
+Output
+18
+
+Validator 1 Validator
+
+Input
+175
+
+Output
+75
+
+Test 2 Test
+
+Input
+439
+
+Output
+51
+
+Validator 2 Validator
+
+Input
+654
+
+Output
+60
+
+Test 3 Test
+
+Input
+90213
+
+Output
+123
+
+Validator 3 Validator
+
+Input
+32501
+
+Output
+3
+
+Test 4 Test
+
+Input
+8451253
+
+Output
+195
+
+Validator 4 Validator
+
+Input
+6587002
+
+Output
+93
+
