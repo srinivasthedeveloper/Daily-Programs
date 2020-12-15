@@ -1,0 +1,108 @@
+Sum of Dice Rolls
+Statement
+ Goal
+When rolling regular 6-sided dice (sides 1-6), how many different ways can the total of the dice equal k? Output this modulo 2^63-1
+
+NOTE: Rolls containing different orders of the same combination of numbers are considered unique (see example).
+
+Number of dice: n
+Target: k
+
+Example:
+n=2, k=5
+(2 6-sided dice, target: 5)
+
+Rolls totaling 5: (1,4), (2,3), (3,2), (4,1)
+Modulo: 4 % 2^63-1
+Output: 4
+
+
+HINT: The number of ways is given by the coefficient of
+
+x^k
+
+in the expansion of
+
+(x + x^2 + x^3 + x^4 + x^5 + x^6)^n
+
+Input
+Line 1: 2 space-separated integers n k
+Output
+Line 1: The total number of ways f of rolling a sum of k with n regular 6-sided dice, modulo 2^63-1
+Constraints
+0 < n <= 100
+n <= k <= 6 * n
+Example
+Input
+
+2 5
+
+Output
+
+4
+
+Game modes
+Fastest, Shortest
+Test cases
+Basic test 1 Test
+Input
+2 5
+Output
+4
+Basic test 2 Validator
+Input
+2 7
+Output
+6
+Big test 1 Test
+Input
+15 72
+Output
+330639445
+Big test 2 Validator
+Input
+15 71
+Output
+530137275
+Bigger test 1 Test
+Input
+25 140
+Output
+130616265
+Bigger test 2 Validator
+Input
+26 153
+Output
+3276
+Edge case 1 Test
+Input
+20 20
+Output
+1
+Edge case 2 Validator
+Input
+20 120
+Output
+1
+Huge test 1 Test
+Input
+100 300
+Output
+9125035093189013030
+Obscene test 2 Validator
+Input
+99 305
+Output
+7733866373711738197
+
+
+# Shortest solution I could come up with: 159 chars
+from scipy.special import*
+print((lambda n,k:sum((-1)**i*comb(n,i,exact=1)*comb(k-6*i-1,n-1,exact=1)for i in range(n+1)))(*map(int,input().split()))%(2**63-1))
+
+# Expanded for clarity
+def ways(n, k):
+    t = 0
+    for i in range(n + 1):
+        t += (-1)**i * comb(n, i, exact=True) * comb(k - 6*i - 1, n - 1, exact=True)
+    return t % (2**63)
