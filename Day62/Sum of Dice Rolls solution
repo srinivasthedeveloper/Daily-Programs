@@ -1,0 +1,10 @@
+# Shortest solution I could come up with: 159 chars
+from scipy.special import*
+print((lambda n,k:sum((-1)**i*comb(n,i,exact=1)*comb(k-6*i-1,n-1,exact=1)for i in range(n+1)))(*map(int,input().split()))%(2**63-1))
+
+# Expanded for clarity
+def ways(n, k):
+    t = 0
+    for i in range(n + 1):
+        t += (-1)**i * comb(n, i, exact=True) * comb(k - 6*i - 1, n - 1, exact=True)
+    return t % (2**63)

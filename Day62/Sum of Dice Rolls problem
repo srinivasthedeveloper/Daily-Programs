@@ -1,6 +1,5 @@
 Sum of Dice Rolls
 Statement
- Goal
 When rolling regular 6-sided dice (sides 1-6), how many different ways can the total of the dice equal k? Output this modulo 2^63-1
 
 NOTE: Rolls containing different orders of the same combination of numbers are considered unique (see example).
@@ -94,15 +93,3 @@ Input
 99 305
 Output
 7733866373711738197
-
-
-# Shortest solution I could come up with: 159 chars
-from scipy.special import*
-print((lambda n,k:sum((-1)**i*comb(n,i,exact=1)*comb(k-6*i-1,n-1,exact=1)for i in range(n+1)))(*map(int,input().split()))%(2**63-1))
-
-# Expanded for clarity
-def ways(n, k):
-    t = 0
-    for i in range(n + 1):
-        t += (-1)**i * comb(n, i, exact=True) * comb(k - 6*i - 1, n - 1, exact=True)
-    return t % (2**63)
