@@ -1,0 +1,32 @@
+A method to approximate PI is to place N random points in a x-y diagram with x and y between 0 and 1.
+Then we check which of these points are at a distance smaller or equal to 1 from the origin (0,0). The rate obtained corresponds to PI/4.
+
+From the points you will receive in input, produce the estimation of PI.
+Input
+N the number of points you will receive to estimate PI.
+x the x value of the point
+y the y value of the point
+Output
+One line which is the estimation of PI
+Constraints
+5 < N < 1,000
+0 ≤ x ≤ 1
+0 ≤ y ≤ 1
+Example
+Input
+
+10
+0.44665087470084275 0.7814409871720857
+0.7041731240004209 0.4788892619817777
+0.5886575238238624 0.7324955170095947
+0.6565434828324502 0.7039153745498603
+0.5775729855984102 0.3079992953472084
+0.5172871993693507 0.8574159866720961
+0.31215370368367445 0.5742290301153288
+0.5068821107488173 0.827249751259953
+0.47115127211491314 0.7567791894886847
+0.7243752278897876 0.718696681541423
+
+Output
+
+3.2
