@@ -1,0 +1,222 @@
+Representations Count
+Statement
+ Goal
+In a world without negative numbers, we could still represent them by conceiving of any number as a pair of positive numbers whose value is the left subtracted from the right. Thus, the pair (7, 4) could be interpreted as -3. Naturally, (3, 5) would represent positive 2.
+
+A nice visualization for this number system is to use stacks of blocks:
+
+[]
+[]
+[]      []
+[][]    []
+[][]  [][]
+[][]  [][]
+[][]  [][]
+
+
+Given a series of such numbers, output their sum and product.
+Input
+Line 1: L, the number of lines of input; and N, the number of pairs of block stacks
+Next L lines: the block stack pairs to be summed and multiplied
+
+Note that the input lines are space-padded to the same width to aid parsing.
+Output
+on separate lines, the sum and product of the numbers represented by the pairs of block stacks
+Constraints
+L <= 20
+N <= 10
+Example
+Input
+
+7 2
+[]        
+[]        
+[]      []
+[][]    []
+[][]  [][]
+[][]  [][]
+[][]  [][]
+
+Output
+
+-1
+-6
+
+Game modes
+Fastest, Shortest
+Test cases
+Example Test
+Input
+7 2
+[]        
+[]        
+[]      []
+[][]    []
+[][]  [][]
+[][]  [][]
+[][]  [][]
+Output
+-1
+-6
+Elpmaxe Validator
+Input
+7 2
+  []      
+  []      
+  []  []  
+[][]  []  
+[][]  [][]
+[][]  [][]
+[][]  [][]
+Output
+1
+-6
+Zero Test
+Input
+6 3
+  []            
+  []          []
+  []          []
+  []  [][]    []
+[][]  [][]    []
+[][]  [][]  [][]
+Output
+8
+0
+Zero (validator) Validator
+Input
+9 3
+[]              
+[]      []      
+[]      []      
+[]      []      
+[]      []  [][]
+[]    [][]  [][]
+[][]  [][]  [][]
+[][]  [][]  [][]
+[][]  [][]  [][]
+Output
+-2
+0
+Factorial Test
+Input
+6 5
+                          []
+                    []    []
+              []    []    []
+        []    []    []    []
+  []    []    []    []    []
+[][]  [][]  [][]  [][]  [][]
+Output
+15
+120
+Liarotcaf Validator
+Input
+6 5
+[]                          
+[]    []                    
+[]    []    []              
+[]    []    []    []        
+[]    []    []    []    []  
+[][]  [][]  [][]  [][]  [][]
+Output
+-15
+-120
+Fibonacci mix Test
+Input
+17 7
+                                      []
+                                      []
+                                      []
+                                      []
+                                      []
+                                      []
+                                      []
+      []                              []
+      [][]                      []    []
+      [][]  []                  []    []
+      [][]  []            []    []    []
+      [][]  [][]  []      []    []    []
+      [][]  [][]  []      []    []    []
+      [][]  [][]  []      []    []  [][]
+[]    [][]  [][]  [][]    []    []  [][]
+[][]  [][]  [][]  [][]  [][]    []  [][]
+[][]  [][]  [][]  [][]  [][]  [][]  [][]
+Output
+19
+3120
+Fibonacci mix (validator) Validator
+Input
+17 7
+                                      []
+                                      []
+                                      []
+                                      []
+                                      []
+                                      []
+                                      []
+        []                            []
+      [][]                    []      []
+      [][]    []              []      []
+      [][]    []        []    []      []
+      [][]  [][]  []    []    []      []
+      [][]  [][]  []    []    []      []
+      [][]  [][]  []    []    []    [][]
+  []  [][]  [][]  [][]  []    []    [][]
+[][]  [][]  [][]  [][]  [][]  []    [][]
+[][]  [][]  [][]  [][]  [][]  [][]  [][]
+Output
+1
+-3120
+Random Test
+Input
+20 10
+  []                                                      
+  []                                                      
+  []                                                      
+  []                                                      
+  []          []        []      []                    []  
+  []          []        []      []        []          []  
+  []          []        []    [][]        []          []  
+  []          []  []    []    [][]        []          []  
+[][]          []  []    []    [][]        []          [][]
+[][]          []  []    []    [][]  []    []          [][]
+[][]    []  [][]  []    []    [][]  []    []          [][]
+[][]    []  [][]  []    []    [][]  []    []          [][]
+[][]    []  [][]  []    []    [][]  []    [][]    []  [][]
+[][]    []  [][]  []    []    [][]  []    [][]    []  [][]
+[][]    []  [][]  [][]  []    [][]  [][]  [][]    []  [][]
+[][]    []  [][]  [][]  []    [][]  [][]  [][]  [][]  [][]
+[][]    []  [][]  [][]  [][]  [][]  [][]  [][]  [][]  [][]
+[][]  [][]  [][]  [][]  [][]  [][]  [][]  [][]  [][]  [][]
+[][]  [][]  [][]  [][]  [][]  [][]  [][]  [][]  [][]  [][]
+[][]  [][]  [][]  [][]  [][]  [][]  [][]  [][]  [][]  [][]
+Output
+-9
+-23708160
+Random (validator) Validator
+Input
+20 10
+                                            []  []        
+                                            []  []        
+                  []    []      []          []  []        
+                  []    []      []          []  []        
+                  []    []      []          []  []        
+                  [][]  [][]    []          []  []      []
+            []    [][]  [][]    []  []      []  []      []
+            []    [][]  [][]    []  []      []  []      []
+[]          []    [][]  [][]    []  []      []  []      []
+[]    [][]  []    [][]  [][]    []  []      []  []      []
+[]    [][]  []    [][]  [][]    []  [][]    []  []    [][]
+[]    [][]  []    [][]  [][]    []  [][]    []  []    [][]
+[][]  [][]  []    [][]  [][]    []  [][]    []  [][]  [][]
+[][]  [][]  []    [][]  [][]    []  [][]    []  [][]  [][]
+[][]  [][]  []    [][]  [][]  [][]  [][]  [][]  [][]  [][]
+[][]  [][]  []    [][]  [][]  [][]  [][]  [][]  [][]  [][]
+[][]  [][]  []    [][]  [][]  [][]  [][]  [][]  [][]  [][]
+[][]  [][]  [][]  [][]  [][]  [][]  [][]  [][]  [][]  [][]
+[][]  [][]  [][]  [][]  [][]  [][]  [][]  [][]  [][]  [][]
+[][]  [][]  [][]  [][]  [][]  [][]  [][]  [][]  [][]  [][]
+Output
+-6
+0
