@@ -34,7 +34,3 @@ Expected output
 11200000013333
 
 12013
-
-s=input()+" "
-for i in range(len(s)-1):
- if(s[i]!=s[i+1]):print(s[i],end="")
