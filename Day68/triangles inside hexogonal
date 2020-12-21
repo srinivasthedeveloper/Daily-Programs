@@ -1,0 +1,77 @@
+Parse the regular hexagon, and tell how much regular unit triangle do you find, if the length of one side of the regular hexagon is n unit(s).
+
+As it is well known, every regular hexagon, that has a positive integer value for the length of one side can be split into a positive integer value of regular triangles, where the regular triangle has sides with 1 unit of length.
+
+For example, if the hexagon has sides with 1 unit of length, it will be split into 6 triangles.
+If the hexagon has sides with 2 units of length, it will be split into 24 triangles.
+Input
+Line 1: The length of one side of the hexagon is n unit
+Output
+Line 1 : The number of regular 1-unit triangles inside the regular hexagon
+Constraints
+0 < n < 7500
+Example
+Input
+
+1
+
+Output
+
+6
+
+
+
+Input:
+
+3
+
+Output:
+
+54
+
+
+Input:
+
+5
+
+Output:
+
+150
+
+
+Input:
+
+10
+
+Output:
+
+600
+
+
+Input:
+
+50
+
+Output:
+
+15000
+
+
+Input:
+
+256
+
+Output:
+
+393216
+
+
+Input:
+
+3276
+
+Output:
+
+64393056
+
+print(int(input())**2*6)
