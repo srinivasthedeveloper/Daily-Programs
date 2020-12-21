@@ -73,5 +73,3 @@ Input:
 Output:
 
 64393056
-
-print(int(input())**2*6)
