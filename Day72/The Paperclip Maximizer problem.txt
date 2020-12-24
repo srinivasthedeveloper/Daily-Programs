@@ -1,0 +1,112 @@
+The Paperclip Maximizer
+Statement
+You are shopping at your local online paperclip store.
+
+You want to buy as many paperclips as possible, and you have at most C units of cryptocurrency to spend. The store has N different physical boxes of paperclips available for purchase. Each of the boxes is made by a different supplier, so the price and the number of paperclips may vary from box to box.
+
+For each physical box of paperclips, you can either choose to buy that box (if you can afford it) or choose not to buy it. You cannot buy the same physical box of paperclips more than once.
+
+You must output the maximum total number of paperclips you can buy, without exceeding your spending limit.
+Input
+Line 1: Two space separated integers C and N for your spending limit and the number of boxes.
+Next N lines: Two space separated integers price and paperclips for the price of one of the boxes and the number of paperclips in that box.
+Output
+Line 1: The maximum total number of paperclips you can buy, while spending at most C units of cryptocurrency. If you cannot afford any of the boxes, output 0.
+Constraints
+0 ≤ C < 1000
+0 ≤ N < 10
+0 ≤ price,paperclips < 1000
+Example
+Input
+
+4 4
+2 3
+3 5
+2 3
+5 100
+
+Output
+
+6
+
+Game modes
+Fastest, Shortest
+Test cases
+Buy the two smallest Test
+Input
+4 4
+2 3
+3 5
+2 3
+5 100
+Output
+6
+Validator 1 Validator
+Input
+19 5
+20 99
+12 15
+8 9
+8 9
+2 1
+Output
+19
+Buy the big one Test
+Input
+5 4
+2 3
+3 5
+2 3
+5 100
+Output
+100
+Validator 2 Validator
+Input
+8 3
+4 30
+7 61
+4 30
+Output
+61
+Buy all of them Test
+Input
+999 5
+0 50
+2 3
+3 5
+2 3
+5 50
+Output
+111
+Validator 3 Validator
+Input
+15 9
+1 100
+4 30
+1 100
+1 100
+7 59
+1 100
+1 100
+4 30
+1 100
+Output
+660
+Buy none of them Test
+Input
+1 4
+2 3
+3 5
+2 3
+5 100
+Output
+0
+Validator 4 Validator
+Input
+0 4
+1 9
+0 0
+0 1
+0 2
+Output
+3
