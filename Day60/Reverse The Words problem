@@ -1,6 +1,5 @@
 Reverse The Words
 Statement
- Goal
 You need to reverse the "my_d3f1n1t10n_0f_wh4t_4_w0rd_1s" ("my_d3f1n1t10n_0f_wh4t_4_w0rd_1s" consisting of an uninterrupted string of characters from a-z, A-Z, 0-9, including the _ (underscore) character) keeping the punctuation of the text.
 Input
 A single line, with the "my_d3f1n1t10n_0f_wh4t _4_w0rd_1s" to reverse.
@@ -17,8 +16,6 @@ Output
 
 olleH, woH erA uoY?
 
-Game modes
-Fastest
 Test cases
 Test 1 Test
 Input

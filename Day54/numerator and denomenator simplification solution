@@ -1,0 +1,10 @@
+from math import gcd
+n,d=map(int,input().split('/'))
+c=gcd(n,d)
+print("INVALID"if(d==0)else str(n//c)+' / '+str(d//c))
+
+
+from math import gcd
+n,d=map(int,input().split('/'))
+c=gcd(n,d)
+print(f"{n // c} / {d // c}" if d else "INVALID")
