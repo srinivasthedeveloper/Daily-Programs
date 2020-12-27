@@ -1,0 +1,43 @@
+A train is going along a track of a length of Lfeet, and is coasting at a starting speed of Sfeet/second. The train's speed decreases by half every second.
+
+
+Example:
+L = 10
+S = 5
+pos = position of train along track
+
+0 seconds: s=5, pos=0
+1 seconds: s=2.5, pos=5
+2 seconds: s=1.75, pos=7.5
+etc....
+As the speed decreases, the position of the train along the track will get very close like 9.9999999999 feet but not 10, therefore the output for this example would be false.
+
+
+More Examples:
+S=40
+L=100
+output: false
+---
+S=60
+L=100
+output: true
+
+
+There is a trick to it....
+
+Output whether or not it will make it to the end of the track (true or false)
+Input
+Line 1: S Speed of Train (Feet/second)
+Line 2: L Length of track (Feet)
+Output
+true if it will make it to the end of the track, false if it won't.
+Constraints
+Example
+Input
+
+10.0
+15.0
+
+Output
+
+true
