@@ -1,0 +1,21 @@
+In this advanced version of the trolley problem, a train has lost his brakes and is going to kill people working on several part of tracks ahead. Only you can switch the tracks the train is going to take, but whatever you do, the train will hit people.
+
+Find the best possible outcome by taking into account the number of people on each path and their individual values (Note that there will always be only one optimal solution).
+Input
+Line 1: An integer N for the number of paths the train can take
+Next N lines: Two space separated integers Q and V for the number of persons on the path and their individual arbitrary value.
+Output
+Line 1: The path number going from 1 to N the train must take for the minimum casualty value.
+Constraints
+2 ≤ N ≤ 100
+1 ≤ Q,V ≤ 1000
+Example
+Input
+
+2
+1 1
+3 1
+
+Output
+
+1
