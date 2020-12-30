@@ -1,0 +1,1 @@
+for i in input().split():print(sum([ord(j) for j in i]))

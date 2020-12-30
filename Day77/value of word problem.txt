@@ -1,0 +1,22 @@
+You have to print the value of each word in the given sentence. The value of a word is equal to the sum of the character codes of the characters in that word.
+Input
+The sentence on a single line.
+Output
+The value of each word on separated lines.
+Example
+Input
+
+ab
+
+Output
+
+195
+
+Input
+
+a b
+
+Output
+
+97
+98
