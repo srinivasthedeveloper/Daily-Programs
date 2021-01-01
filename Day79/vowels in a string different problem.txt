@@ -1,0 +1,21 @@
+You're given a list of N words, you have to print N lines, each of them being the first vowel of the word w in alphabetical order.
+If there is no vowel, you have to print NONE.
+If the same letter appears in upper and lower cases, the priority goes to the lowercase.
+
+Note: "y" is not considered as a vowel, the only letters which are considered as vowels are: A E I O U.
+Input
+Line 1 : An integer N for the number of words.
+Next N lines : Each word w.
+Output
+N lines : First vowel of each w when its letters are taken in alphabetical order, in the lowest case it appears, NONE if there is none.
+Constraints
+1 ≤ N ≤ 100
+Example
+Input
+
+1
+AZERTY
+
+Output
+
+A
