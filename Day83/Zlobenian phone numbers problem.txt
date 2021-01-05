@@ -1,0 +1,37 @@
+Zlobenian phone numbers contain 12 digits, the first one always being 0. The normalized format represents a number as 4 groups of 3 digits, separated by spaces, e.g. 034 278 556 023.
+However, people tend to write the numbers with varied spacing, using groups of digits of varying sizes, possibly with no spacing at all.
+Furthermore when the international country code of Zlobenia, +879, is indicated, the leading zero may be omitted or shown between parentheses, e.g. + 879 34 278 556 023 or + 879 (0)34 278 556 023.
+
+Your program must read a single Zlobenian phone number in arbitrary format and output its normalized representation.
+Input
+A single Zlobenian phone number with arbitrary formatting, with or without the country code.
+Output
+The normalized version of the number, 4 groups of 3 digits separated by a single space.
+Constraints
+The number is always valid (no missing digits, no extra characters, no typos, etc). Only the formatting differs from the normalized representation.
+The input number is at most 50 chars long.
+Example
+Input
+
+012345678901
+
+Output
+
+012 345 678 901
+
+Input
+
++ 879 (0)34 278 556 023
+
+Output
+
+034 278 556 023
+
+
+Input
+
++87    9342 78 556 023
+
+Output
+
+034 278 556 023
