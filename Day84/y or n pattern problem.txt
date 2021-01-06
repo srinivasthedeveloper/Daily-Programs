@@ -1,0 +1,30 @@
+INPUT:
+10 'Y'
+	
+OUTPUT:
+Y--------Y
+-Y------Y-
+--Y----Y--
+---Y--Y---
+----YY----
+----YY----
+-----Y----
+-----Y----
+-----Y----
+-----Y----
+
+INPUT:
+5 'N'
+
+OUTPUT:
+N---N
+NN--N
+N-N-N
+N--NN
+N---N
+
+INPUT:
+-1 'T'
+
+OUTPUT:
+Invalid
