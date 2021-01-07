@@ -1,0 +1,19 @@
+zappy only know four words: GA, BU, ZO and MEU.
+They use these four words to say the numbers.
+For example:
+0 is GA, 1 is BU, 2 is ZO and 3 is MEU.
+4 is BUGA, 5 is BUBU, 8 is ZOGA, 16 is BUGAGA and so on.
+Input
+A single number N
+Output
+zappy word for this number
+Constraints
+N < 10^9
+Example
+Input
+
+0
+
+Output
+
+GA
