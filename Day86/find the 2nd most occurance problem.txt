@@ -1,0 +1,53 @@
+You are given an array A = a1, a2, ..., an of n numbers, you have to find the second most occurring number in the array.
+
+Example: 1 1 1 6 3 6
+1 occurs 3 times, 6 occurs 2 times, 3 occurs once.
+6 is the second most occurring number.
+
+Note: It is always guaranteed that only one number is the most occurring, and also only one number is the second most occurring, without any conflict.
+Input
+The first line of input contains a single integer n denoting the total numbers.
+The second line of input contains n space separated numbers of array A.
+Output
+Output a single number second denoting the second most occurring number in A.
+Constraints
+3 ≤ n < 100
+-10^8 ≤ ai ≤ 10^8
+The second most occurring number always exists.
+Example
+Input 1
+
+5
+4 5 4 4 5
+
+Output
+
+5
+
+
+Input 2
+
+
+9 
+1 1 1 1 1 1 1 1 -2
+
+Output
+
+-2
+
+Input 3
+
+7
+1 2 3 1 2 2 2
+
+Output
+
+1
+
+Input 4
+
+99 
+100000000 1  0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1
+
+Output
+1
