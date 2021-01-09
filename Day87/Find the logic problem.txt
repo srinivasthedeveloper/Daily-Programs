@@ -1,0 +1,38 @@
+Find the logic....
+
+Test cases
+
+Test 1 Test:-
+Input
+11
+
+Output
+4
+
+Test 2 Test
+Input
+2
+
+Output
+4
+
+Test 3 Test
+Input
+10
+
+Output
+1
+
+Test 4 Test
+Input
+12
+
+Output
+9
+
+Test 5 Test
+Input
+2020
+
+Output
+16
