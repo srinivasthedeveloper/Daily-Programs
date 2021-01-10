@@ -1,0 +1,15 @@
+Given two integers a and b, answer the sign of the product of a, a+1, ..., b.
+Input
+Two integers a and b separated by space.
+Output
+If the product is positive, output 1. If it is zero, output 0. If it is negative, output -1.
+Constraints
+-10^10 ≤ a ≤ b ≤ 10^10
+Example
+Input
+
+3 5
+
+Output
+
+1
