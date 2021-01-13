@@ -1,0 +1,23 @@
+Colors are usually represented in code using 6 digit hex color codes. These consist of a hash, followed by 3 numbers in hexadecimal notation from 0-255. The first number represents red, the second green, and the third blue. For example, purple could be represented with #FF00FF.
+
+You must convert red, green, and blue values to a single hex color code.
+Input
+r the amount of 'red'
+g the amount of 'green'
+b the amount of 'blue'
+Output
+A single 7 character string representing the color
+Constraints
+0 <= r <= 255
+0 <= g <= 255
+0 <= b <= 255
+Example
+Input
+
+255
+0
+255
+
+Output
+
+#FF00FF
