@@ -1,0 +1,43 @@
+You must reorganize the characters of a string called message according to the positions given in a keyword string. The positions are numbers starting at 0.
+
+Example:
+
+keyword: 402135
+
+
+message: abcdef
+
+
+
+The output will be the character of message at position number 4, followed by the character at position number zero, and then the second one, etc ...
+
+output:  eacbdf
+
+
+
+When the length of the message is greater than the length of the keyword, you must divide the message in parts with the same length as the keyword and apply the positions locally for each part.
+Input
+A keyword string with the position numbers.
+A message string for reorganize.
+Output
+An output string with the characters of the message in the order given by keyword string.
+Constraints
+Keyword length: 2 to 10
+Message length is N times keyword length.
+N >= 1
+N integer
+Example
+Input
+
+13204
+ELVIS
+
+Output
+
+LIVES
+
+12045
+STATE BELOW
+
+
+TASTE ELBOW
