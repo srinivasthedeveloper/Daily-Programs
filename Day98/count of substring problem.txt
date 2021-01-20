@@ -1,0 +1,18 @@
+Your task is to count how often the substring S appears in any word from the string text, ignoring case. If S appears two times in one word it should be counted only once.
+Input
+Line 1: A string S, the string that must be looked for in each word.
+Line 2: A string text, the list of all words, separated by a space.
+Output
+One line: How often S appears in distinct words from text.
+Constraints
+0 < Length of S < 10
+0 < Length of text < 256
+Example
+Input
+
+hello
+hello World
+
+Output
+
+1
