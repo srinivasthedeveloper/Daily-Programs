@@ -1,0 +1,40 @@
+The game mode is REVERSE: You do not have access to the statement. You have to guess what to do by observing the following set of tests:
+01
+Test 1
+Input
+Expected output
+
+3
+87x0 56x0 84x0
+
+Hex
+
+02
+Test 2
+Input
+Expected output
+
+6
+76x0 e6x0 96x0 46x0 f6x0 36x0
+
+coding
+
+03
+Test 3
+Input
+Expected output
+
+20
+97x0 47x0 96x0 67x0 96x0 47x0 16x0 c6x0 56x0 25x0 02x0 66x0 f6x0 02x0 97x0 27x0 f6x0 56x0 86x0 45x0
+
+Theory of Relativity
+
+04
+Test 4
+Input
+Expected output
+
+9
+56x0 46x0 f6x0 36x0 02x0 33x0 c3x0 02x0 94x0
+
+I <3 code
