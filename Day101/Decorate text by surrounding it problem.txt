@@ -1,0 +1,49 @@
+ Decorate text by surrounding it with the given decoration character, N number of times. Provide one space before & after the text as shown in the examples below.
+
+For Example 1 :
+
+Input :
+
+welcome * 1
+
+output :
+
+***********
+* welcome *
+***********
+
+Example 2:
+
+Input :
+
+Awesome $ 4
+
+Output :
+
+$$$$$$$$$$$$$$$$$
+$$$$$$$$$$$$$$$$$
+$$$$$$$$$$$$$$$$$
+$$$$$$$$$$$$$$$$$
+$$$$ Awesome $$$$
+$$$$$$$$$$$$$$$$$
+$$$$$$$$$$$$$$$$$
+$$$$$$$$$$$$$$$$$
+$$$$$$$$$$$$$$$$$
+Input
+A line containing 3 parameters namely text , decoration character and N number of times.
+Output
+print text with decoration
+Constraints
+1 < N < 10
+Example
+Input
+
+HELLO * 2
+
+Output
+
+***********
+***********
+** HELLO **
+***********
+***********
