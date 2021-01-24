@@ -1,0 +1,36 @@
+A word ladder is a sequence of words of the same length where each word in the sequence changes exactly one letter in the previous word. Here's an example of a word ladder connecting "mate" and "vial":
+
+
+mate
+mite
+mile
+mill
+dill
+dial
+vial
+
+
+Given the terms of an attempted word ladder, determine whether it is valid. That is, all the words should be the same length, and each step should result from changing exactly one letter. Also, there should be no duplicates among the words, and there should be at least 2 words.
+Input
+Line 1: An integer N, denoting the number of terms in the word ladder.
+Next N lines: Strings S, each containing only lowercase values.
+Output
+Line 1: Either "true" or "false", depending on the validity of the word ladder.
+Constraints
+2 ≤ N ≤ 60
+1 ≤ Length of S ≤ 60
+Example
+Input
+
+7
+mate
+mite
+mile
+mill
+dill
+dial
+vial
+
+Output
+
+true
