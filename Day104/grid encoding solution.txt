@@ -1,0 +1,26 @@
+The goal of your program is to compress a N by N grid into one single line using run-length encoding.
+The grid contains only the characters "A", "B" or "C".
+Input
+Line 1: An integer N for the amount of rows and columns of the grid.
+Next N lines: A string of N characters.
+Output
+Consecutive characters of the same type are expressed as the count followed by the character.
+If the count is 1, it is omitted.
+Consecutive means either:
+- two characters next to each other on the same row
+- or one character at the end of a given row and another one a the start of the next row
+
+Line 1: The run-length encoding of the grid.
+Constraints
+3 ≤ N ≤ 7
+Example
+Input
+
+3
+AAA
+BBB
+AAA
+
+Output
+
+3A3B3A
